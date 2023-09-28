@@ -3,7 +3,7 @@ import fetch from 'isomorphic-fetch'
 import { LOCAL_STATE_QUERY } from '../graphql/LocalStateRequests'
 
 const devEndpoint = 'http://localhost:5000'
-const prodEndpoint = 'https://marvel-collections-backend.herokuapp.com'
+const prodEndpoint = 'https://marvel-collections-backend-b058df9827ab.herokuapp.com'
 
 export const client = new ApolloClient({
   uri: process.env.NODE_ENV === 'development' ? devEndpoint : prodEndpoint,
